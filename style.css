@@ -1,0 +1,173 @@
+/* -------------------------- CSS Reset --------------------------- */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ------------------------- Start Pre-Loader----------------------------- */
+.preloader{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.spinner-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.spinner-container>div {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, #009fff, #ec2f4b);
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#spinner2 {
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 2s linear infinite;
+}
+
+#spinner2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    width: 80%;
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px black;
+}
+/* ------------------------End Pre-Loader------------------------ */
+
+/* -----------------------------Start Header------------------------------ */
+
+header{
+    position: fixed;
+    background-color: #00000030;
+    height: 3rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .navbar ul {
+    display: flex;
+    font-size: 1.4rem;
+}
+header .navbar ul li{
+    list-style: none;
+    margin: 0 7px;
+}
+header .navbar ul a{
+    text-decoration: none;
+    color: #009fff;
+}
+header .search input{
+    border: 0;
+    background-color: #ffffff89;
+    height: 2rem;
+    width: 27vw;
+    border-radius: 25px;
+    padding-left: 2.3rem;
+    font-size: 1.2rem;
+}
+header .search .search-icon{
+    background-color: #ec2f4b;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* -----------------------------End Header------------------------------- */
+
+/* ---------------------- Start Hero ----------------------------------- */
+
+
+
+section .hero{
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url(landing-page-img.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+section .hero::before {
+content: '';
+background-color: black;
+position: absolute;
+height: 100vh;
+width: 100vw;
+opacity: .4;
+}
+section .hero .hero-text{
+    /* background-color: #ec2f4b; */
+    height: 30vh;
+    width: 40vw;
+    color: #ffffff;
+    z-index: 1;
+    
+}
+section .hero .hero-text h1{
+    font-size: 58px;
+}
+section .hero .hero-text h3{
+    margin-top: 1.5rem;
+    width: 75%;
+}
+section .hero .hero-text button{
+    height: 3rem;
+    width: 12rem;
+    font-size: 21px;
+    border: 2px solid;
+    border-radius: 25px;
+    background: none;
+    margin: 4rem 0;
+    color: #ec2f4b;
+    text-transform: capitalize;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* ---------------------- End Hero ----------------------------------- */
