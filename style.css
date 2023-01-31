@@ -1,5 +1,16 @@
 /* -------------------------- CSS Reset --------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --white: #FFF;
+    --black: #000;
+    --dark: #1E1E1E;
+    --gray: rgba(1, 1, 1, 0.6);
+    --lite: rgba(255, 255, 255, 0.6);
+    --primary: #009fff;
+    --secondary: #fdc632;
+}
 
 * {
     padding: 0;
@@ -7,13 +18,13 @@
     box-sizing: border-box;
 }
 
-body{
-     overflow-x: hidden;
+body {
+    overflow-x: hidden;
 }
 
 
 /* ------------------------- Start Pre-Loader----------------------------- */
-.preloader{
+.preloader {
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -70,13 +81,14 @@ body{
     border-radius: 50%;
     box-shadow: 0 0 5px 5px black;
 }
+
 /* ------------------------End Pre-Loader------------------------ */
 
 
 /* -----------------------------Start Home page ------------------------------ */
 /* -----------------------------Start Header------------------------------ */
 
-header{
+header {
     z-index: 10;
     position: fixed;
     background-color: #ffffff7e;
@@ -91,15 +103,18 @@ header .navbar ul {
     display: flex;
     font-size: 1.4rem;
 }
-header .navbar ul li{
+
+header .navbar ul li {
     list-style: none;
     margin: 0 7px;
 }
-header .navbar ul a{
+
+header .navbar ul a {
     text-decoration: none;
     color: #ec2f4b;
 }
-header .search input{
+
+header .search input {
     border: 0;
     background-color: #4545459c;
     height: 2rem;
@@ -111,7 +126,7 @@ header .search input{
 }
 
 
-header .search .search-icon{
+header .search .search-icon {
     background-color: #009fff;
     ;
     height: 2rem;
@@ -123,13 +138,13 @@ header .search .search-icon{
     align-items: center;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     background-color: #009fff;
     /* display: none; */
-    
+
 }
 
 
@@ -139,7 +154,7 @@ header .search .search-icon{
 
 
 
-section .hero{
+section .hero {
     z-index: -1;
     top: 0;
     left: 0;
@@ -152,31 +167,36 @@ section .hero{
     align-items: center;
     justify-content: end;
 }
+
 section .hero::before {
-content: '';
-background-color: black;
-position: absolute;
-height: 100vh;
-width: 100vw;
-opacity: .4;
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: .4;
 }
-section .hero .hero-text{
+
+section .hero .hero-text {
     /* background-color: #ec2f4b; */
     height: 30vh;
     width: 40vw;
     color: #ffffff;
     z-index: 1;
-    
+
 }
-section .hero .hero-text h1{
+
+section .hero .hero-text h1 {
     font-size: 58px;
     font-family: 'Philosopher', sans-serif;
 }
-section .hero .hero-text h3{
+
+section .hero .hero-text h3 {
     margin-top: 1.5rem;
     width: 75%;
 }
-section .hero .hero-text button{
+
+section .hero .hero-text button {
     height: 3rem;
     width: 12rem;
     font-size: 21px;
@@ -199,7 +219,7 @@ section .hero .hero-text button{
 /* ---------------------- Start recent-page ----------------------------------- */
 
 
-.recent-page{
+.recent-page {
     /* position: relative; */
     /* background-color: aquamarine; */
     margin-top: 40px;
@@ -221,19 +241,19 @@ section .hero .hero-text button{
 
 /* ---------------------- Start recent-page-cards ----------------------------------- */
 
-.recent-product-cards-box{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        width: 64vw;
-        margin: auto;
-        /* background-color: #ec2f4b; */
+.recent-product-cards-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 64vw;
+    margin: auto;
+    /* background-color: #ec2f4b; */
 }
 
 
-.recent-product-card{
+.recent-product-card {
     height: 50vh;
     width: 20rem;
     border-radius: 5px;
@@ -241,6 +261,7 @@ section .hero .hero-text button{
     display: flex;
     flex-direction: column;
 }
+
 .product-img {
     height: 60%;
     /* background-color: aqua; */
@@ -248,31 +269,37 @@ section .hero .hero-text button{
     justify-content: center;
     align-items: center;
 }
-.product-img img{
+
+.product-img img {
     height: 90%;
 }
-.product-title{
+
+.product-title {
     height: 8%;
     /* background-color: bisque; */
     padding: 2% 0;
     text-align: center;
 }
-.product-description{
+
+.product-description {
     height: 10%;
     /* background-color: blanchedalmond; */
     text-align: center;
 }
-.product-price{
+
+.product-price {
     height: 7%;
     /* background-color: darkgoldenrod; */
     text-align: center;
 }
-.product-rating{
+
+.product-rating {
     height: 5%;
     /* background-color: yellow; */
     text-align: center;
     margin-bottom: 12px;
 }
+
 /* .recent-cart{
     border: 0;
     height: 11%;
@@ -281,33 +308,38 @@ section .hero .hero-text button{
     border-bottom-right-radius: 5px;
 } */
 
-.recent-cart{
+.recent-cart {
     border: 0;
     height: 11%;
     /* background-color: yellowgreen; */
     background-color: #009fff;
 }
-.recent-cart button:nth-child(1){
+
+.recent-cart button:nth-child(1) {
     /* background-color: aqua; */
     float: left;
     height: 100%;
     width: 80%;
     color: #ffffff;
 }
-.recent-cart button:nth-child(2){
+
+.recent-cart button:nth-child(2) {
     /* background-color: aqua; */
     height: 100%;
     float: right;
     width: 20%;
     border: 0;
 }
-.recent-cart i{
+
+.recent-cart i {
     font-size: 20px;
 }
-.product-rating i{
+
+.product-rating i {
     font-size: 10px;
 }
-.product-description{
+
+.product-description {
     margin: auto;
     width: 60%;
     font-size: 12px;
@@ -319,20 +351,21 @@ section .hero .hero-text button{
 
 
 
-.view-all-products{
+.view-all-products {
     margin: auto;
     margin-top: 20PX;
     height: 40px;
     width: 60rem;
-    
+
     /* background-color: #009fff; */
 }
-.view-all-products button{
+
+.view-all-products button {
     float: right;
     margin-right: 20px;
     margin-top: 10PX;
     height: 30px;
-    padding:0 5PX;
+    padding: 0 5PX;
     border: 0;
     background: transparent;
     font-size: 15px;
@@ -343,99 +376,345 @@ section .hero .hero-text button{
 
 /* ---------------------- Start categories ----------------------------------- */
 
-section .categories{
+section .categories {
     /* background-color: #009fff; */
     height: 30vh;
     width: 100vw;
 }
- section .categories .categories-boxes{
+
+section .categories .categories-boxes {
     height: 100%;
     display: grid;
+    width: 100%;
     /* grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(auto,1fr); */
     /* margin: auto 0; */
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-column-gap: 10px;
+    grid-auto-flow: column;
     grid-row-gap: 10px;
     align-items: center;
-    overflow: scroll;
-    padding: 10px;
- }
- section .categories .categories-boxes .box{
+    /* overflow: scroll; */
+    padding: 20px;
+}
+
+section .categories .categories-boxes .box {
     height: 90%;
-    width: 200px;
-    /* background-color: #ec2f4b; */
+    /* width: 200px; */
+    background-color: #ec2f4b;
     /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     border-radius: 5px;
- }
- section .categories .categories-boxes .box p{
+}
+
+section .categories .categories-boxes .box p {
     position: absolute;
     z-index: 10;
     font-size: 15px;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
- }
- section .categories .categories-boxes .box::before{
-     content: '';
-     top: 0;
-     left: 0;
-     height: 100%;
-     width: 200px;
-     background-color: #000000;
-     opacity: 0.3;
-     /* position: absolute; */
-     z-index: 10;
-     border-radius: 5px;
- }
+}
+
+section .categories .categories-boxes .box::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.3;
+    /* position: absolute; */
+    z-index: 10;
+    border-radius: 5px;
+}
 
 
- section .categories .categories-boxes .box:nth-child(1){
+section .categories .categories-boxes .box:nth-child(1) {
     background: url(gallery/man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- section .categories .categories-boxes .box:nth-child(2){
+}
+
+section .categories .categories-boxes .box:nth-child(2) {
     background: url(gallery/women.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- section .categories .categories-boxes .box:nth-child(3){
+}
+
+section .categories .categories-boxes .box:nth-child(3) {
     background: url(gallery/kids.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- section .categories .categories-boxes .box:nth-child(4){
+}
+
+section .categories .categories-boxes .box:nth-child(4) {
     background: url(gallery/applinces.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- section .categories .categories-boxes .box:nth-child(5){
+}
+
+section .categories .categories-boxes .box:nth-child(5) {
     background: url(gallery/electronics.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- section .categories .categories-boxes .box:nth-child(6){
+}
+
+section .categories .categories-boxes .box:nth-child(6) {
     background: url(gallery/crafts.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- section .categories .categories-boxes .box:nth-child(7){
+}
+
+section .categories .categories-boxes .box:nth-child(7) {
     background: url(gallery/grocery.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- section .categories .categories-boxes .box:nth-child(8){
+}
+
+section .categories .categories-boxes .box:nth-child(8) {
     background: url(gallery/furniture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
- }
+}
 
 
 /* ---------------------- End categories ----------------------------------- */
+
+/* ---------------------- Start footer ----------------------------------- */
+
+footer {
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(39, 27, 111, 1) 0%, rgba(87, 25, 45, 1) 100%);
+    position: relative;
+    width: 100%;
+    height: 50%;
+    /* top: 350px; */
+    border-top-left-radius: 70px;
+    font-size: 0.8rem;
+}
+
+
+
+@media (max-width:960px) {
+    footer {
+        width: 100%;
+        top: 120px;
+    }
+
+    .main {
+        margin: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logo {
+        grid-column: 1/3;
+    }
+
+    .office {
+        grid-column: 3/5;
+    }
+
+    .link {
+        grid-column: 1/3;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width:660px) {
+    .main {
+        gap: 10px;
+        margin: 0;
+
+    }
+
+    .icons {
+        display: flex;
+    }
+
+
+
+    .row {
+        grid-column: 1/4;
+    }
+}
+
+
+
+
+
+
+
+.manik {
+    width: 120px;
+}
+
+.main {
+    margin: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.footer-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.office-des {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.office a {
+    text-decoration: none;
+    color: #98A8F8;
+
+}
+
+.office a:hover {
+    color: #fff;
+}
+
+.num {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.link-des {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-des a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.link-des a:hover {
+    color: #FB2576;
+    transition: linear 0.3s;
+}
+
+.btn-know {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    background-color: transparent;
+    border: 1px solid #98A8F8;
+    color: #98A8F8;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+}
+
+
+.btn-know:hover {
+    color: white;
+    background-color: #98A8F8;
+    transition: linear 0.3s;
+}
+
+.subcribe {
+    display: flex;
+}
+
+input[type=mail] {
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.sub-icon {
+    margin: 7px;
+    margin-right: 15px;
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+.ri-arrow-right-line {
+    margin-left: 0;
+
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 2%;
+}
+
+
+.social-icon {
+    position: relative;
+    top: 2px;
+}
+
+.icons a:hover {
+    color: #fff;
+    background-color: #FB2576;
+    border-color: #FB2576;
+}
+
+.newsletter-des {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+    margin: 2px auto;
+    opacity: 40%;
+    border: 0.01px solid white;
+
+}
+
+.copyright p {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------- End footer ----------------------------------- */
 
 
 
@@ -474,20 +753,23 @@ section .categories{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.product-section .filter{
+
+.product-section .filter {
     /* border: 2px solid #009fff; */
     width: 20vw;
 }
-.product-section .products{
+
+.product-section .products {
     /* border: 2px solid #ec2f4b; */
     width: 80vw;
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
-.product-section .products .box{
+
+.product-section .products .box {
     border: 2px solid black;
     height: 300px;
 
