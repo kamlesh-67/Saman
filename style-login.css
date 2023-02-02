@@ -1,0 +1,79 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Philosopher:wght@700&family=Playfair+Display&display=swap');
+
+
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: #4f4e4e;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.form-page{
+
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+    background: url(gallery/landing-page-img.jpg);
+    background-size: cover;
+}
+
+.form-body{
+    /* background-color: bisque; */
+    height: 480px;
+    width: 390px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px 0px #4f4e4e;
+    padding: 30px;
+    z-index: 20;
+}
+.form-body h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    /* font-weight: bolder; */
+    font-size: 35px;
+    font-family: 'Philosopher', sans-serif;
+}
+.form-body input{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #009fff;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+}
+.form-body input::placeholder{
+    color: #ffffff;
+}
+.form-body p{
+    text-align: right;
+}
+.form-body p a{
+    text-decoration: none;
+    color: #009fff;
+}
+
+.form-body button{
+    height: 50px;
+    width: 100%;
+    margin-top: 70px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #009fff;
+    
+    border: 0;
+
+}
