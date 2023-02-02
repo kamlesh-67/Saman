@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Login and registration </title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,59 +16,71 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-login.css">
-    <title>Login - saman</title>
-</head>
-<body>
-    <div class="preloader" id="preloader">
-        <div class="spinnerWrap">
-            <div class="spinner" id="spinner2"></div>
-        </div>
-    </div>
-    <section>
-        <div class="overlay"></div>
-        <div class="form-page">
-
-            
-            
-            <div class="form-body">
-                <div class="toggle-switch"></div>
-                <div class="toggle">
-                    <button name="login" id="login">log in</button>
-                    <button name="regester" id="regester">regester</button>
-                </div>
-                <div class="form">
-
-                    <div class="login">
-                        
-                        <h1>Welcome back</h1>
-                        <form action="#" method="post">
-                            <input type="email" name="email" id="email" placeholder="Enter your email">
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
-                        <p><a href="#">forgot password !</a></p>
-                        <button type="submit">log in</button>
-                        
-                    </form>
-                </div>
-                <div class="regester">
-
-                    <h1>Welcome back</h1>
-                    <form action="#" method="post">
-                        <input type="email" name="email" id="email" placeholder="Enter your email">
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
-                        <p><a href="#">forgot password !</a></p>
-                        <button type="submit">log in</button>
-                        
-                    </form>
-                </div>
-            </div>
-                    
-            </div>
-
-        </div>
-
-    </section>
     
+</head>
 
-    <script src="script.js"></script>
+<body>
+
+
+    <div class="page-body">
+
+        <div class="form-body">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+
+
+            <div class="into">
+                <h1>Welcome back</h1>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" name="" id="" placeholder="User Id" required>
+                <input type="text" class="input-field" name="" id="" placeholder="Enter password" required>
+                <div class="forgot">
+                    <span><a href="#">Forgot password !</a></span>
+                </div>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" name="" id="" placeholder="User Id" required>
+                <input type="email" class="input-field" name="" id="" placeholder="Enter email id" required>
+                <input type="text" class="input-field" name="" id="" placeholder="Enter password" required>
+                <div class="agrement">
+                    <input type="checkbox" class="check-box" name="" id="">
+                    <span><a href="#">I agree to the terms & conditions</a></span>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        let loginform = document.getElementById("login")
+        let registerform = document.getElementById("register")
+        let btn = document.getElementById("btn")
+        let page_title = document.getElementById("page-title")
+        page_title.innerHTML="Login - saman"
+
+        function register() {
+            loginform.style.left = "-400px"
+            registerform.style.left = "50px"
+            btn.style.left = "110px"
+            page_title.innerHTML="Register - saman"
+        }
+        function login() {
+            loginform.style.left = "50px"
+            registerform.style.left = "450px"
+            btn.style.left = "0px"
+            page_title.innerHTML="Login - saman"
+        }
+    </script>
 </body>
+
 </html>

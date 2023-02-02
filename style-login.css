@@ -1,127 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Philosopher:wght@700&family=Playfair+Display&display=swap');
-
-
-.overlay {
-    height: 100vh;
-    width: 100vw;
-    background-color: #4f4e4e;
-    position: absolute;
-    opacity: 0.5;
-    z-index: 10;
-}
-
-.form-page {
-
-    height: 100vh;
-    width: 100vw;
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
-    align-items: center;
-    background: url(gallery/landing-page-img.jpg);
-    background-size: cover;
 }
+
+.page-body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#000000a8, #000000a8), url(gallery/landing-page-img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
 
 .form-body {
-    /* background-color: bisque; */
-    height: 580px;
-    width: 390px;
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: #ffffff67;
     border-radius: 8px;
-    /* box-shadow: 0px 3px 5px 0px #4f4e4e; */
-    padding: 30px;
-    z-index: 20;
-    background: #009fff40;
-    /* box-shadow: 0 2px 10px 0 #009fff5e; */
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    /* border-radius: 10px; */
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid #d1d5db4d;
+    overflow: hidden;
 }
 
-.form-body h1 {
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #00cdac1f;
+    border-radius: 30px;
+
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.into {
+    margin: 30px auto;
     text-align: center;
-    margin-bottom: 50px;
-    color: #ffffff;
-    /* font-weight: bolder; */
-    font-size: 35px;
-    font-family: 'Philosopher', sans-serif;
 }
 
-.form-body form input {
-    height: 50px;
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #009fff;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #e7e5e5;
     outline: none;
     background: transparent;
-    color: #ffffff;
-    
 }
 
-.form-body input::placeholder {
+.input-field::placeholder {
     color: #ffffff;
 }
 
-.form-body p {
-    text-align: right;
-}
-
-.form-body p a {
-    text-decoration: none;
-    color: #009fff;
-}
-
-.form-body form button {
-    height: 50px;
-    width: 100%;
-    margin-top: 70px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    background-color: #009fff;
-    border-radius: 25px;
-    border: 0;
-
-}
-
-.toggle{
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    display: block;
     margin: auto;
-    height: 45px;
-    width: 200px;
-    box-shadow: 0 2px 10px 0 #0000005e;
-    border-radius: 25px;
-    margin-bottom: 30px;
-}
-.toggle button{
-    height: 45px;
-    width: 95px;
-    /* border-radius: 25px; */
-    border: none;
-    background: transparent;
-    /* z-index: 30; */
-    text-transform: uppercase;
-}
-.toggle-switch{
-    height: 45px;
-    width: 95px;
-    position: absolute;
-    background-color: aquamarine;
-    z-index: 10;
-    border-radius: 25px;
-    /* opacity: 0.5; */
+    cursor: pointer;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 40px;
 }
 
-.form{
-    position: absolute;
-    /* width: 780px; */
-    display: flex;
-    /* justify-content: space-between; */
+.forgot span {
+    margin: 30px 10px 30px 0;
+
 }
-.form form{
-    width: 390px;
-    padding:30px;
+
+.forgot span a {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+.agrement .check-box {
+    margin: 30px 10px 30px 0;
+    bottom: 68px;
+}
+
+.agrement span {
+    font-size: 12px;
+
+}
+
+.agrement a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
