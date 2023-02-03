@@ -93,7 +93,7 @@ body {
 header {
     z-index: 10;
     position: fixed;
-    background-color: #ffffff7e;
+    background-color: #000000a4;
     height: 3rem;
     width: 100vw;
     display: flex;
@@ -118,7 +118,7 @@ header .navbar ul a {
 
 header .search input {
     border: 0;
-    background-color: #4545459c;
+    background-color: #afafaf9c;
     height: 2rem;
     width: 40vw;
     border-radius: 25px;
@@ -140,14 +140,54 @@ header .search .search-icon {
     align-items: center;
 }
 
-.menu ul {
+/* .menu ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     background-color: var(--primary);
-    /* display: none; */
+   
 
+}*/
+
+.menu{
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: #FB2576; */
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 500ms ease-in;
+    overflow: hidden;
+    z-index: 1000;
+    right: -200px;
+
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: #000000a4;
+    /* border-radius: 8px; */
+    border: 1px solid #d1d5db4d;
+    
 }
+.menu a{
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.cross{
+    top: 10px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
+
+
 
 
 /* -----------------------------End Header------------------------------- */
@@ -315,7 +355,7 @@ section .hero .hero-text button {
     height: 11%;
     /* background-color: yellowgreen; */
     /* background-color: var(--primary); */
-    background: linear-gradient(0deg, var(--primary), var(--secondary));
+    background: linear-gradient(60deg, var(--primary), var(--secondary));
 }
 
 .recent-cart button:nth-child(1) {
