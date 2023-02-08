@@ -1,0 +1,60 @@
+
+
+section .banner{
+    height: 15rem;
+    width: 100vw;
+    background-color: aqua;
+}
+
+
+
+section .profile{
+    height: 70vh;
+    width: 200px;
+    background-color: blueviolet;
+    position: absolute;
+    margin-top: -7rem;
+    margin-left: 10rem;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+section .profile .user-img{
+    height: 200px;
+    width: 200px;
+    border:4px solid #808080;
+    border-radius: 50%;
+    font-size: 153px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #808080;
+}
+
+section .profile .user-name,.usre-email{
+    height: 30px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+
+section .profile .kp-user-head{
+    height: 70px;
+    width: 70px;
+    background-color: #808080;
+    border-radius: 50px;
+    margin-bottom: 10px;
+
+}
+section .profile .kp-user-body{
+    height: 60px;
+    width: 140px;
+    background-color: #808080;
+    /* border-radius: 50px; */
+    border-top-right-radius: 47px;
+    border-top-left-radius: 47px;
+
+}
