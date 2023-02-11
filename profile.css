@@ -3,15 +3,21 @@
 section .banner{
     height: 15rem;
     width: 100vw;
-    background-color: aqua;
+    background: linear-gradient(90deg,  var(--primary), var(--secondary));
+    /* text-align: center; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
 }
 
 
 
 section .profile{
-    height: 100vh;
+    height: 88.5vh;
     width: 200px;
-    background-color: blueviolet;
+    background-color: #C0C0C0;
     position: absolute;
     margin-top: -7rem;
     margin-left: 10rem;
@@ -22,7 +28,7 @@ section .profile{
 section .profile .user-img{
     height: 200px;
     width: 200px;
-    border:4px solid #808080;
+    /* border:4px solid #808080; */
     border-radius: 50%;
     font-size: 153px;
     display: flex;
@@ -30,7 +36,7 @@ section .profile .user-img{
     align-items: center;
     flex-direction: column;
     color: #808080;
-    box-shadow: 0px 2px 10px 0px #242424;
+    box-shadow: 0px 0px 5px 0px #242424;
 }
 
 section .profile .user-name,.usre-email{
@@ -39,7 +45,7 @@ section .profile .user-name,.usre-email{
     /* background-color: aquamarine; */
     margin-top: 10px;
     padding-left: 10px;
-    font-family: sans-serif;
+    /* font-family: sans-serif;  */
 }
 
 
@@ -61,21 +67,53 @@ section .profile .kp-user-body{
 
 }
 
-section .order{
+section .order,.wish,.recent{
     height: 250px;
     width: 74vw;
-    background-color: bisque;
+    /* background-color: bisque; */
     float: right;
-
+    margin-top: 10px;
     padding: 10px;
 
+}
+section .wish{
+    /* margin-top: 10px; */
+    /* background-color: aqua; */
 }
 
 
 
+.order .orderbox,.wish .wishbox{
+    height: 90%;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-column-gap: 15px;
+}
 
+.order .orderbox .box,.wish .wishbox .box{
+    height: 100%;
+    width: 200px;
+    border: 1px solid rgb(103, 102, 103);
+    border-radius: 7px;
+    padding: 10px;
+}
 
+.box .img{
+    height: 70%;
+    width: 100%;
+    background: url(watch.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.box .title,.box .price{
+    height: 15%;
+    width: 100%;
+    /* border: 2px dotted rgb(38, 45, 45); */
+}
 
 
 
