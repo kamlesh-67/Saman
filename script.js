@@ -10,6 +10,7 @@ let menu_box = document.getElementById("menu")
 
 function menu(){
     menu_box.style.right = "0px";
+    
     console.log("clicked")
 }
 
