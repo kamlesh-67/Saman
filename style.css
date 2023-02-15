@@ -145,13 +145,12 @@ header .search .search-icon {
     flex-direction: column;
     position: absolute;
     background-color: var(--primary);
-   
 
 }*/
 
 .menu{
     height: 100vh;
-    width: 200px;
+    width: 300px;
     position: absolute;
     top: 0;
     right: 0;
@@ -164,8 +163,7 @@ header .search .search-icon {
     transition: right 500ms ease-in;
     overflow: hidden;
     z-index: 1000;
-    right: -200px;
-
+    right: -300px;
     backdrop-filter: blur(10px) saturate(200%);
     -webkit-backdrop-filter: blur(10px) saturate(200%);
     background-color: #000000a4;
@@ -179,10 +177,12 @@ header .search .search-icon {
 }
 .cross{
     top: 10px;
-    right: 30px;
+    right: 50px;
     position: absolute;
     cursor: pointer;
     color: #ffffff;
+    
+    font-size: 1.4rem;
 }
 
 

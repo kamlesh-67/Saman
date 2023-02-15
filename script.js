@@ -14,7 +14,7 @@ function menu(){
 }
 
 function cross(){
-    menu_box.style.right = '-200px';
+    menu_box.style.right = '-300px';
     // menu_box.style.opacity = '0';
 
 }
