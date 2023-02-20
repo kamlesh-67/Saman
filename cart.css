@@ -1,0 +1,11 @@
+.cartcontainer{
+
+    height: auto;
+    width: 100%;
+    border: 2px dotted red;
+}
+
+.cartcontainer .cartbox{
+    height: 400px;
+    width: 40vw;
+}

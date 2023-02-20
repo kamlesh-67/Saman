@@ -1,0 +1,71 @@
+.mnnu{
+    height: 15rem;
+    width: 100vw;
+    background: linear-gradient(90deg,  var(--primary), var(--secondary));
+    /* text-align: center; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 34px;
+}
+.mnnu i{
+    font-size: 64px;
+}
+
+
+.whishlist-container{
+    margin: 10px auto;
+    width: 60vw;
+    /* height: 100px; */
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+}
+
+.whishlist-container .box{
+    height: 200px;
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 5px;
+    padding: 9px;
+
+
+
+}
+.whishlist-container .box .img{
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+    background: url(watch.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 1px solid gray;
+    padding: 5px;
+}
+.whishlist-container .box .text{
+    width: 47%;
+    padding: 10px;
+    /* background-color: yellow; */
+}
+.whishlist-container .box .add{
+    width: 13%;
+    /* background-color: rgb(237, 145, 25); */
+    display: grid;
+    grid-row-gap:10px
+}
+.whishlist-container .box .add button{
+    border: 0;
+}
+.whishlist-container .box .add button:nth-child(1){
+    background-color: gray;
+}
+
+.whishlist-container .box .add button:nth-child(2){
+    background-color: #d69407;
+}
