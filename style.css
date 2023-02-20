@@ -426,6 +426,7 @@ section .hero .hero-text button {
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(6, 1fr);
         position: relative;
+        width: 60vw;
         /* width: ; */
     }
 }
@@ -455,6 +456,12 @@ section .hero .hero-text button {
     font-size: 15px;
 }
 
+
+@media only screen and (max-width: 600px){
+    .view-all-products{
+        width: 100vw;
+    }
+}
 
 
 
