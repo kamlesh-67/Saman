@@ -16,13 +16,15 @@ section .banner{
 
 section .profile{
     height: 88.5vh;
-    width: 200px;
+    /* width: 200px; */
     background-color: #C0C0C0;
     position: absolute;
     margin-top: -7rem;
     margin-left: 10rem;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
+    transition-property: all;
+    transition-duration: 500ms;
 }
 
 section .profile .user-img{
@@ -121,9 +123,22 @@ section .wish{
 
 
 
+@media only screen and (max-width: 600px) {
+    section .profile{
+    transform: rotate(-90deg);
+    margin-top: -14rem;
+    }
 
+    section .profile .user-img{
+        transform: rotate(90deg);
+    }
+    section .profile .info{
+        margin-top: 5rem;
+        transform: rotate(90deg);
 
+    }
 
+}
 
 
 
