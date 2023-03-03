@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
 
     <link rel="stylesheet" href="profile.css">
 </head>
+
 <body>
     <div class="preloader" id="preloader">
         <div class="spinnerWrap">
@@ -25,7 +27,7 @@
     </div>
     <section>
         <header>
-            <div class="logo"><img src="gallery/logo.png" alt="logo" height="27px"></div>
+            <div class="logo"><a href="index.html"><img src="gallery/logo.png" alt="logo" height="27px"></a></div>
 
             <div class="search">
                 <div class="search-icon">
@@ -39,23 +41,22 @@
 
                 <ul>
                     <!-- <div class="username">kamlesh</div> -->
-                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li onclick="menu()" ><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                        <div class="menu" id="menu">
-                                <div class="cross" onclick="cross()"><i class="fa-solid fa-xmark"></i></div>
-                                <a href="#" class="footer-links">Home</a>
-                                <a href="#" class="footer-links">About</a>
-                                <a href="#" class="footer-links">Services</a>
-                                <a href="#" class="footer-links">Galary</a>
-                                <a href="#" class="footer-links">Contact</a>
-                        
-                        </div>
-                    
+                    <li><a href="wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="profile.html"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li onclick="menu()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <div class="menu" id="menu">
+                        <div class="cross" onclick="cross()"><i class="fa-solid fa-xmark"></i></div>
+                        <a href="index.html" class="footer-links">Home</a>
+                        <a href="about.html" class="footer-links">About</a>
+                        <a href="prodect-detail.html" class="footer-links">Products</a>
+                        <a href="contect.html" class="footer-links">Contact</a>
+                
+                </div>
+
                 </ul>
             </div>
-        </header>   
+        </header>
 
         <div class="banner">
             <h1>My Account</h1>
@@ -73,7 +74,7 @@
         </div>
         <div class="order">
             <h3>My Order</h3>
-            
+
             <div class="orderbox">
                 <div class="box">
                     <div class="img"></div>
@@ -100,13 +101,13 @@
                     <div class="title">Fire-Boltt Hurricane</div>
                     <div class="price">₹ 1799</div>
                 </div>
-                
+
             </div>
         </div>
         <div class="wish">
             <h3>My Wishlist</h3>
             <div class="wishbox">
-                
+
                 <div class="box">
                     <div class="img"></div>
                     <div class="title">Fire-Boltt Hurricane</div>
@@ -132,8 +133,8 @@
                     <div class="title">Fire-Boltt Hurricane</div>
                     <div class="price">₹ 1799</div>
                 </div>
-                
-        </div>
+
+            </div>
 
 
 
@@ -142,7 +143,8 @@
     </section>
 
 
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -7,7 +7,8 @@
     --black: #000;
     --dark: #1E1E1E;
     --gray: rgba(1, 1, 1, 0.6);
-    --lite: rgba(255, 255, 255, 0.6);
+    --lite: #ffffff99;
+    --lite2: #e8e8e8;
     --primary: #02aab0;
     --secondary: #00cdac;
     --footerfirst: #024547;
@@ -280,6 +281,10 @@ section .hero .hero-text button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+section .hero .hero-text button a{
+    text-decoration: none;
+    color: var(--secondary);
 }
 
 
@@ -781,9 +786,9 @@ input[type=mail] {
 }
 
 .icons a:hover {
-    color: #fff;
-    background-color: #FFBF00;
-    border-color: #FFBF00;
+    color: #000000;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .newsletter-des {

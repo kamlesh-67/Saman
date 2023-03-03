@@ -1,11 +1,78 @@
-.cartcontainer{
 
-    height: auto;
+.cartcontainer {
+    /* height: 200px; */
     width: 100%;
-    border: 2px dotted red;
+    /* background-color: aqua; */
+    /* margin-top: 20px; */
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.cartcontainer .cartbox{
-    height: 400px;
-    width: 40vw;
+.cartcontainer .product-detail-section {
+    width: 70vw;
+    /* background-color: bisque; */
+    /* margin: 0 auto; */
+    display: grid;
+    grid-gap: 10px;
+
+}
+
+.cartcontainer .product-detail-section .box {
+    height: 250px;
+    border-bottom: 2px solid #ded9d9;
+    display: flex;
+}
+.cartcontainer .product-detail-section .box .img{
+    width: 25%;
+    height: 100%;
+    background:url(/gallery/image-placeholder.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cartcontainer .product-detail-section .box .data{
+    /* background-color: aqua; */
+    width: 65%;
+    display: grid;
+    justify-content: start;
+    padding-left: 30px;
+    /* align-items: start; */
+}
+.cartcontainer .product-detail-section .box .data .title-data{
+    height: 100px;
+    width: fit-content;
+    line-height: 1.6;
+    /* background-color: blueviolet; */
+}
+.cartcontainer .product-detail-section .box .data .product-detail-description{
+    height: 150px;
+    width: 60%;
+    /* background-color: blue; */
+}
+.cartcontainer .product-detail-section .box .data .title-data .product-detail-title,.product-detail-price,.product-detail-rating{
+    width: fit-content;
+}
+.cartcontainer .product-detail-section .box .data .title-data .product-detail-title{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.cartcontainer .product-detail-section .box .buttons{
+    width: 10%;
+    /* background-color: beige; */
+    display: grid;
+}
+.cartcontainer .product-detail-section .box .buttons button{
+
+    border: 1px solid #ded9d9;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+.cartcontainer .product-detail-section .box .buttons button:nth-child(1){
+    height: 210px;
+    font-size: 21px;
+
+}
+.cartcontainer .product-detail-section .box .buttons button:nth-child(2){
+    height: 40px;
+    font-size: 25px;
 }

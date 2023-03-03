@@ -9,14 +9,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/1d4c1e8286.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="per-info.css">
-    <title>saman</title>
+    <link rel="stylesheet" href="detail-style.css">
+    <title>Saman </title>
 </head>
 
 <body>
@@ -40,7 +37,6 @@
             <div class="navbar">
 
                 <ul>
-                    <!-- <div class="username">kamlesh</div> -->
                     <li><a href="wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
                     <li><a href="profile.html"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -53,53 +49,72 @@
                         <a href="contect.html" class="footer-links">Contact</a>
                 
                 </div>
-
                 </ul>
             </div>
         </header>
-        <!-- 
-        <div class="banner">
-            <h1>Personal Information</h1>
-        </div> -->
+    </section>
+    <section class="detail">
 
-        <div class="form-container">
-
-            <div class="form">
-                <div class="title">Basic Information</div>
-                <div class="name">
-                    <div class="fname"><input type="text" name="fname" id="fname" placeholder="First Name"></div>
-                    <div class="lname"><input type="text" name="lname" id="lname" placeholder="Last Name"></div>
-                    <div class="mo-no"><input type="tel" name="mo" id="mo" placeholder="Mobile Number "></div>
+        <div class="product-filter">
+            <form action="#" method="post">
+                <div class="rating">
+                    <p>Rating</p>
+                    <div><input type="radio" name="rating" id="rating1"> <i class="fa-regular fa-star"></i></div>
+                    <div><input type="radio" name="rating" id="rating2"> <i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i></div>
+                    <div><input type="radio" name="rating" id="rating3"> <i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div><input type="radio" name="rating" id="rating4"> <i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i></div>
+                    <div><input type="radio" name="rating" id="rating5"> <i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                </div>
+                <div class="price">
+                    <p>price</p>
+                    <input type="radio" name="price" id="price1"> below - 500<br>
+                    <input type="radio" name="price" id="price2"> 500 - 1000<br>
+                    <input type="radio" name="price" id="price3"> 1000 - 2000<br>
+                    <input type="radio" name="price" id="price4"> 2000 - 5000<br>
+                    <input type="radio" name="price" id="price5"> 5000 - 10000<br>
+                    <input type="radio" name="price" id="price6"> 10000 - 20000<br>
 
                 </div>
-                <div class="address">
-                    <div class="staddress1"><textarea name="address1" id="address1" cols="30" rows="5"
-                            placeholder="Parmanent Address"></textarea></div>
-                    <div class="staddress2"><textarea name="address2" id="address2" cols="30" rows="5"
-                            placeholder="Secondery Address"></textarea></div>
-                    <div class="city"><input type="text" name="city" id="city" placeholder="City"></div>
-                    <div class="zipcode"><input type="number" name="zipcode" id="zipcode" placeholder="Zip/Pin code">
-                    </div>
-                    <div class="country"><input type="text" name="country" id="country" placeholder="Country"></div>
+                <div class="sort">
+                    <p>Sort</p>
+                    <input type="radio" name="sort" id="sort1"> Sort by price low to high<br>
+                    <input type="radio" name="sort" id="sort2"> Sort by price high to low<br>
+                    <input type="radio" name="sort" id="sort3"> Sort by rating low to high<br>
+                    <input type="radio" name="sort" id="sort4"> Sort by rating high to low<br>
 
+                </div>
+
+                <button type="submit">Filter</button>
+            </form>
+        </div>
+        <div class="product-detail-section">
+            <div class="box">
+                <div class="img"></div>
+                <div class="data">
+                    <div class="title-data">
+                        <div class="product-detail-title">title</div>
+                        <div class="product-detail-price">$60</div>
+                        <div class="product-detail-rating"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    </div>
+                    <div class="product-detail-description">Lorem ipsum dolor sit amet consectetur adipisicing sectetur adipisicing elit. Alias, dignissimos?
+                        Placeat, illo.</div>
+                </div>
+                <div class="buttons">
+                    <button type="submit">add to cart</button>
+                    <button type="submit"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
         </div>
 
 
-
-
-
-
-
-
     </section>
 
-
-
-
-
-    <!-- 
     <footer class="footer-sec">
         <div class="main">
 
@@ -142,8 +157,7 @@
                 <div class="link-des">
                     <a href="#" class="footer-links">Home</a>
                     <a href="#" class="footer-links">About</a>
-                    <a href="#" class="footer-links">Services</a>
-                    <a href="#" class="footer-links">Galary</a>
+                    <a href="#" class="footer-links">Products</a>
                     <a href="#" class="footer-links">Contact</a>
                 </div>
 
@@ -175,12 +189,10 @@
             <hr>
             <p>© Copyright 2023 saman.</p>
         </div>
-    </footer> -->
-
-
-
-
+    </footer>
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
