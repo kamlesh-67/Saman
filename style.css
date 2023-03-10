@@ -282,7 +282,8 @@ section .hero .hero-text button {
     justify-content: space-evenly;
     align-items: center;
 }
-section .hero .hero-text button a{
+
+section .hero .hero-text button a {
     text-decoration: none;
     color: var(--secondary);
 }
@@ -324,7 +325,7 @@ section .hero .hero-text button a{
 .recent-product-cards-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     width: 64vw;
@@ -352,6 +353,7 @@ section .hero .hero-text button a{
 
 .product-img img {
     height: 90%;
+    width: 95%;
 }
 
 .product-title {
@@ -365,6 +367,10 @@ section .hero .hero-text button a{
     height: 10%;
     /* background-color: blanchedalmond; */
     text-align: center;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
 }
 
 .product-price {
@@ -425,10 +431,11 @@ section .hero .hero-text button a{
     width: 60%;
     font-size: 12px;
 }
+
 @media only screen and (max-width: 600px) {
-    .recent-product-cards-box{
+    .recent-product-cards-box {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
         position: relative;
         width: 60vw;
@@ -462,8 +469,8 @@ section .hero .hero-text button a{
 }
 
 
-@media only screen and (max-width: 600px){
-    .view-all-products{
+@media only screen and (max-width: 600px) {
+    .view-all-products {
         width: 100vw;
     }
 }
@@ -474,12 +481,12 @@ section .hero .hero-text button a{
 
 section .categories {
     /* background-color: var(--primary); */
-    
+
     width: 100vw;
 }
 
 section .categories .categories-boxes {
-    
+
     display: grid;
     width: 100%;
     /* grid-template-rows: repeat(1,1fr);
@@ -581,7 +588,7 @@ section .categories .categories-boxes .box:nth-child(8) {
 @media only screen and (max-width: 600px) {
     section .categories .categories-boxes {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr);
         position: relative;
         /* width: ; */

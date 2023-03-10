@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .payment-box {
+    /* background-color: aqua; */
+    height: 70vh;
+    width: 35vw;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+.container .payment-box h1 {
+    text-transform: uppercase;
+    height: 5%;
+    width: fit-content;
+    margin: auto;
+    /* background-color: #ffffff; */
+}
+
+.container .payment-box .product-detail {
+    height: 40%;
+    /* background-color: aquamarine; */
+    display: flex;
+    /* padding: 0 20px; */
+}
+.container .payment-box .product-detail img{
+    height: 90%;
+    width: 50%;
+}   
+.container .payment-box .product-detail .product-info{
+    padding: 10px 20px;
+}
+
+
+
+.container .payment-box .get-card-details {
+    height: 45%;
+    /* background-color: #ff00ff; */
+    display: grid;
+    text-align: center;
+}
+
+
+.container .payment-box .get-card-details .payment-method{
+    width: 60%;
+    /* background-color: beige; */
+    margin: 0 auto;
+}
+.container .payment-box .get-card-details .more{
+    display: flex;
+}
+.container .payment-box .get-card-details .payment-method input{
+    height: 35px;
+    width: 100%;
+    margin:10px 0px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.container .payment-box .btn button {
+    /* padding: 10px 20px; */
+    height: 40px;
+    width: 100px;
+    border: 1px solid #00000000;
+    border-radius: 25px;
+    background: linear-gradient(60deg,#02aab0,#00cdac);
+}
+
+.container .payment-box .btn {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}

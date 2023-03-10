@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form {
+    background-color: aqua;
+    height: 30vh;
+    width: 30vw;
+    padding: 20px;
+    display: grid;
+    /* justify-content: center; */
+}
+
+
+form .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+form .box-ra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .box-ra div{
+    display: flex;
+    width: 20rem;
+    justify-content: space-evenly  ;
+}
+form .box input{
+    height: 1.6rem;
+    width: 20rem;
+}

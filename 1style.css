@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cartcontainer {
+    /* height: 200px; */
+    width: 100%;
+    /* background-color: aqua; */
+    /* margin-top: 20px; */
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cartcontainer .product-detail-section {
+    width: 70vw;
+    /* background-color: bisque; */
+    /* margin: 0 auto; */
+    display: grid;
+    grid-gap: 10px;
+
+}
+
+.cartcontainer .product-detail-section .box {
+    height: 250px;
+    border-bottom: 2px solid #ded9d9;
+    display: flex;
+    /* background-color: aqua; */
+}
+.cartcontainer .product-detail-section .box .img{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+}
+.cartcontainer .product-detail-section .box .img img{
+    /* width: 350px; */
+    height: 240px;
+
+}
+.cartcontainer .product-detail-section .box .data{
+    /* background-color: aqua; */
+    width: 65%;
+    display: grid;
+    justify-content: start;
+    padding-left: 30px;
+    /* align-items: start; */
+}
+.cartcontainer .product-detail-section .box .data .title-data{
+    height: 100px;
+    width: fit-content;
+    line-height: 1.6;
+    /* background-color: blueviolet; */
+}
+.cartcontainer .product-detail-section .box .data .product-detail-description{
+    height: 150px;
+    max-width: 70%;
+    width: fit-content;
+    /* background-color: blue; */
+}
+.cartcontainer .product-detail-section .box .data .title-data .product-detail-title,.product-detail-price,.product-detail-rating{
+    width: fit-content;
+}
+.cartcontainer .product-detail-section .box .data .title-data .product-detail-title{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.cartcontainer .product-detail-section .box .buttons{
+    width: 10%;
+    /* background-color: beige; */
+    display: grid;
+}
+.cartcontainer .product-detail-section .box .buttons button{
+
+    border: 1px solid #ded9d9;
+    background: linear-gradient(90deg, #02aab0, #00cdac);
+}
+.cartcontainer .product-detail-section .box .buttons button:nth-child(1){
+    height: 210px;
+    font-size: 21px;
+
+}
+.cartcontainer .product-detail-section .box .buttons button:nth-child(2){
+    height: 40px;
+    font-size: 25px;
+}
+.gray{
+    color: #ffffff;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

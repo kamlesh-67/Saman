@@ -22,14 +22,20 @@
     height: 250px;
     border-bottom: 2px solid #ded9d9;
     display: flex;
+    /* background-color: aqua; */
 }
 .cartcontainer .product-detail-section .box .img{
-    width: 25%;
-    height: 100%;
-    background:url(watch.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+}
+.cartcontainer .product-detail-section .box .img img{
+    /* width: 350px; */
+    height: 240px;
+
 }
 .cartcontainer .product-detail-section .box .data{
     /* background-color: aqua; */
@@ -47,7 +53,8 @@
 }
 .cartcontainer .product-detail-section .box .data .product-detail-description{
     height: 150px;
-    width: 60%;
+    max-width: 70%;
+    width: fit-content;
     /* background-color: blue; */
 }
 .cartcontainer .product-detail-section .box .data .title-data .product-detail-title,.product-detail-price,.product-detail-rating{
@@ -65,7 +72,7 @@
 .cartcontainer .product-detail-section .box .buttons button{
 
     border: 1px solid #ded9d9;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: linear-gradient(90deg, #02aab0, #00cdac);
 }
 .cartcontainer .product-detail-section .box .buttons button:nth-child(1){
     height: 210px;
@@ -75,4 +82,11 @@
 .cartcontainer .product-detail-section .box .buttons button:nth-child(2){
     height: 40px;
     font-size: 25px;
+}
+.gray{
+    color: #ffffff;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
